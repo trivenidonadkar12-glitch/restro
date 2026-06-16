@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact Us | Delicious Restaurant</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:40px 20px;
+    background:
+    linear-gradient(rgba(0,0,0,0.55),
+    rgba(0,0,0,0.55)),
+    url('https://images.unsplash.com/photo-1517248135467-4c7edcad34c4');
+    background-size:cover;
+    background-position:center;
+    background-attachment:fixed;
+}
+
+.container1{
+    width:100%;
+    max-width:1100px;
+}
+
+.contact-box{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:30px;
+}
+
+.form-box,
+.info-box{
+    background:rgba(255,255,255,0.12);
+    backdrop-filter:blur(15px);
+    border:1px solid rgba(255,255,255,0.2);
+    padding:35px;
+    border-radius:20px;
+    box-shadow:0 8px 32px rgba(0,0,0,0.3);
+}
+
+.restaurant-logo{
+    text-align:center;
+    font-size:50px;
+    margin-bottom:10px;
+}
+
+h2{
+    text-align:center;
+    color:#fff;
+    margin-bottom:10px;
+}
+
+.subtitle{
+    text-align:center;
+    color:#ddd;
+    margin-bottom:25px;
+}
+
+.input-group{
+    margin-bottom:15px;
+}
+
+.input-group label{
+    display:block;
+    color:#fff;
+    margin-bottom:6px;
+    font-size:14px;
+}
+
+.input-group input,
+.input-group textarea{
+    width:100%;
+    padding:12px;
+    border:none;
+    border-radius:10px;
+    outline:none;
+    background:rgba(255,255,255,0.9);
+}
+
+.input-group textarea{
+    resize:none;
+    height:100px;
+}
+
+.btn{
+    width:100%;
+    padding:14px;
+    border:none;
+    border-radius:10px;
+    background:#ff6b35;
+    color:#fff;
+    font-size:16px;
+    font-weight:600;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.btn:hover{
+    background:#ff4500;
+}
+
+.info-item{
+    margin-bottom:20px;
+}
+
+.info-item h3{
+    color:#ffb347;
+    font-size:18px;
+    margin-bottom:5px;
+}
+
+.info-item p{
+    color:#fff;
+    font-size:14px;
+    line-height:1.6;
+}
+
+.map{
+    margin-top:20px;
+    border-radius:15px;
+    overflow:hidden;
+}
+
+.map iframe{
+    width:100%;
+    height:250px;
+    border:0;
+}
+
+.footer-text{
+    text-align:center;
+    color:#ddd;
+    margin-top:20px;
+    font-size:13px;
+}
+
+@media(max-width:900px){
+
+.contact-box{
+    grid-template-columns:1fr;
+}
+
+}
+
+</style>
+</head>
+<body>
+
+<div class="container1">
+
+<div class="contact-box">
+
+    <!-- CONTACT FORM -->
+
+    <div class="form-box">
+
+        <div class="restaurant-logo">🍽️</div>
+
+        <h2>Contact Us</h2>
+
+        <p class="subtitle">
+            We'd love to hear from you
+        </p>
+
+        <form>
+
+            <div class="input-group">
+                <label>Full Name</label>
+                <input type="text" placeholder="Enter your name" required>
+            </div>
+
+            <div class="input-group">
+                <label>Email Address</label>
+                <input type="email" placeholder="Enter your email" required>
+            </div>
+
+            <div class="input-group">
+                <label>Mobile Number</label>
+                <input type="tel" placeholder="Enter mobile number">
+            </div>
+
+            <div class="input-group">
+                <label>Message</label>
+                <textarea placeholder="Write your message here"></textarea>
+            </div>
+
+            <button type="submit" class="btn">
+                Send Message
+            </button>
+
+        </form>
+
+    </div>
+
+    <!-- RESTAURANT INFORMATION -->
+
+    <div class="info-box">
+
+        <h2>Restaurant Information</h2>
+
+        <div class="info-item">
+            <h3>📍 Address</h3>
+            <p>
+                123 Food Street,<br>
+                City Center, Maharashtra, India
+            </p>
+        </div>
+
+        <div class="info-item">
+            <h3>📞 Phone</h3>
+            <p>+91 98765 43210</p>
+        </div>
+
+        <div class="info-item">
+            <h3>✉ Email</h3>
+            <p>info@deliciousrestaurant.com</p>
+        </div>
+
+        <div class="info-item">
+            <h3>🕒 Opening Hours</h3>
+            <p>Monday - Sunday<br>10:00 AM - 11:00 PM</p>
+        </div>
+
+        <!-- LIVE LOCATION MAP -->
+
+        <div class="map">
+            <iframe
+            src="https://maps.google.com/maps?q=Mumbai,Maharashtra&t=&z=13&ie=UTF8&iwloc=&output=embed"
+            loading="lazy">
+            </iframe>
+        </div>
+
+    </div>
+
+</div>
+
+<div class="footer-text">
+    © 2026 Delicious Restaurant | Fine Dining Experience
+</div>
+
+</div>
+
+</body>
+</html>

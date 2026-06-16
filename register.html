@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Restaurant Reservation</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:
+    linear-gradient(rgba(0,0,0,0.55),
+    rgba(0,0,0,0.55)),
+    url('https://images.unsplash.com/photo-1517248135467-4c7edcad34c4');
+    background-size:cover;
+    background-position:center;
+    background-attachment:fixed;
+}
+
+.container1{
+    width:90%;
+    max-width:500px;
+}
+
+.form-box{
+    background:rgba(255,255,255,0.12);
+    backdrop-filter:blur(15px);
+    border:1px solid rgba(255,255,255,0.2);
+    padding:35px;
+    border-radius:20px;
+    box-shadow:0 8px 32px rgba(0,0,0,0.3);
+}
+
+.form-box h2{
+    text-align:center;
+    color:#fff;
+    margin-bottom:10px;
+}
+
+.form-box p{
+    text-align:center;
+    color:#ddd;
+    margin-bottom:25px;
+}
+
+.input-group{
+    margin-bottom:15px;
+}
+
+.input-group label{
+    display:block;
+    color:#fff;
+    margin-bottom:6px;
+    font-size:14px;
+}
+
+.input-group input,
+.input-group select,
+.input-group textarea{
+    width:100%;
+    padding:12px;
+    border:none;
+    outline:none;
+    border-radius:10px;
+    background:rgba(255,255,255,0.9);
+    font-size:15px;
+}
+
+.input-group textarea{
+    resize:none;
+    height:80px;
+}
+
+.btn{
+    width:100%;
+    padding:14px;
+    border:none;
+    border-radius:10px;
+    background:#ff6b35;
+    color:white;
+    font-size:17px;
+    font-weight:bold;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.btn:hover{
+    background:#ff4500;
+    transform:translateY(-2px);
+}
+
+.restaurant-logo{
+    text-align:center;
+    font-size:50px;
+    margin-bottom:10px;
+}
+
+.footer-text{
+    text-align:center;
+    color:#ddd;
+    margin-top:15px;
+    font-size:13px;
+}
+
+@media(max-width:600px){
+    .form-box{
+        padding:25px;
+    }
+}
+</style>
+
+</head>
+<body>
+
+<div class="container1">
+    <div class="form-box">
+
+        <div class="restaurant-logo">🍽️</div>
+
+        <h2>Restaurant Reservation</h2>
+        <p>Reserve Your Table Now</p>
+
+        <form>
+
+            <div class="input-group">
+                <label>Full Name</label>
+                <input type="text" placeholder="Enter your name" required>
+            </div>
+
+            <div class="input-group">
+                <label>Mobile Number</label>
+                <input type="tel" placeholder="Enter mobile number" required>
+            </div>
+
+            <div class="input-group">
+                <label>Email Address</label>
+                <input type="email" placeholder="Enter email">
+            </div>
+
+            <div class="input-group">
+                <label>Reservation Date</label>
+                <input type="date" required>
+            </div>
+
+            <div class="input-group">
+                <label>Reservation Time</label>
+                <input type="time" required>
+            </div>
+
+            <div class="input-group">
+                <label>Number of Members</label>
+                <select required>
+                    <option value="">Select Members</option>
+                    <option>1 Person</option>
+                    <option>2 Persons</option>
+                    <option>3 Persons</option>
+                    <option>4 Persons</option>
+                    <option>5 Persons</option>
+                    <option>6 Persons</option>
+                    <option>7 Persons</option>
+                    <option>8 Persons</option>
+                    <option>9 Persons</option>
+                    <option>10+ Persons</option>
+                </select>
+            </div>
+
+            <div class="input-group">
+                <label>Special Request</label>
+                <textarea placeholder="Birthday, Anniversary, Window Seat etc."></textarea>
+            </div>
+
+            <button type="submit" class="btn">
+                Book Table
+            </button>
+
+        </form>
+
+        <div class="footer-text">
+            Experience Fine Dining & Delicious Food
+        </div>
+
+    </div>
+</div>
+
+</body>
+</html>

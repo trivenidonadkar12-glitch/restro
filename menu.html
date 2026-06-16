@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Delicious Food Restaurant Menu</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI',sans-serif;
+}
+
+body{
+    background:
+    linear-gradient(rgba(0,0,0,0.75),
+    rgba(0,0,0,0.75)),
+    url('https://images.unsplash.com/photo-1414235077428-338989a2e8c0');
+    background-size:cover;
+    background-position:center;
+    background-attachment:fixed;
+    color:white;
+}
+
+/* Header */
+
+header{
+    text-align:center;
+    padding:40px 20px;
+}
+
+header h1{
+    font-size:3rem;
+    color:#FFD700;
+    margin-bottom:10px;
+}
+
+header p{
+    font-size:1.2rem;
+    color:#f5f5f5;
+}
+
+/* Menu Section */
+
+.menu-section{
+    width:90%;
+    margin:auto;
+    padding-bottom:40px;
+}
+
+.category{
+    margin-bottom:35px;
+}
+
+.category-title{
+    background:linear-gradient(45deg,#ff9800,#ff5722);
+    color:white;
+    padding:15px;
+    border-radius:12px;
+    font-size:1.8rem;
+    text-align:center;
+    margin-bottom:20px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.4);
+}
+
+.food-row{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:20px;
+}
+
+.food-card{
+    background:rgba(255,255,255,0.12);
+    backdrop-filter:blur(10px);
+    border-radius:15px;
+    padding:20px;
+    text-align:center;
+    transition:.3s;
+    border:1px solid rgba(255,255,255,0.2);
+}
+
+.food-card:hover{
+    transform:translateY(-8px);
+    box-shadow:0 10px 25px rgba(255,152,0,0.5);
+}
+
+.food-card h3{
+    color:#FFD700;
+    margin-bottom:10px;
+}
+
+.price{
+    color:#90EE90;
+    font-size:18px;
+    font-weight:bold;
+}
+
+/* Footer */
+
+footer{
+    text-align:center;
+    padding:20px;
+    background:rgba(0,0,0,0.6);
+    margin-top:30px;
+}
+
+</style>
+</head>
+<body>
+
+<header>
+    <h1>🍽 Delicious Food Restaurant</h1>
+    <p>Experience the Taste of India & Beyond</p>
+</header>
+
+<div class="menu-section">
+
+    <!-- South Indian -->
+
+    <div class="category">
+        <div class="category-title">🥥 South Indian Special</div>
+
+        <div class="food-row">
+            <div class="food-card">
+                <h3>Masala Dosa</h3>
+                <p class="price">₹120</p>
+            </div>
+
+            <div class="food-card">
+                <h3>Plain Dosa</h3>
+                <p class="price">₹90</p>
+            </div>
+
+            <div class="food-card">
+                <h3>Idli Sambar</h3>
+                <p class="price">₹80</p>
+            </div>
+
+            <div class="food-card">
+                <h3>Medu Vada</h3>
+                <p class="price">₹100</p>
+            </div>
+
+            <div class="food-card">
+                <h3>Uttapam</h3>
+                <p class="price">₹130</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Gujarati -->
+
+    <div class="category">
+        <div class="category-title">🥘 Gujarati Delights</div>
+
+        <div class="food-row">
+            <div class="food-card">
+                <h3>Gujarati Thali</h3>
+                <p class="price">₹280</p>
+            </div>
+
+            <div class="food-card">
+                <h3>Dhokla</h3>
+                <p class="price">₹90</p>
+            </div>
+
+            <div class="food-card">
+                <h3>Khandvi</h3>
+                <p class="price">₹110</p>
+            </div>
+
+            <div class="food-card">
+                <h3>Thepla</h3>
+                <p class="price">₹80</p>
+            </div>
+
+            <div class="food-card">
+                <h3>Fafda Jalebi</h3>
+                <p class="price">₹140</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Rajasthani -->
+
+    <div class="category">
+        <div class="category-title">🏜 Rajasthani Royal Foods</div>
+
+        <div class="food-row">
+            <div class="food-card">
+                <h3>Dal Baati Churma</h3>
+                <p class="price">₹250</p>
+            </div>
+
+            <div class="food-card">
+                <h3>Gatte Ki Sabzi</h3>
+                <p class="price">₹180</p>
+            </div>
+
+            <div class="food-card">
+                <h3>Ker Sangri</h3>
+                <p class="price">₹200</p>
+            </div>
+
+            <div class="food-card">
+                <h3>Bajra Roti</h3>
+                <p class="price">₹70</p>
+            </div>
+
+            <div class="food-card">
+                <h3>Rajasthani Thali</h3>
+                <p class="price">₹320</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Western -->
+
+    <div class="category">
+        <div class="category-title">🍕 Western Favorites</div>
+
+        <div class="food-row">
+            <div class="food-card">
+                <h3>Margherita Pizza</h3>
+                <p class="price">₹299</p>
+            </div>
+
+            <div class="food-card">
+                <h3>Veg Burger</h3>
+                <p class="price">₹149</p>
+            </div>
+
+            <div class="food-card">
+                <h3>Pasta Alfredo</h3>
+                <p class="price">₹249</p>
+            </div>
+
+            <div class="food-card">
+                <h3>French Fries</h3>
+                <p class="price">₹99</p>
+            </div>
+
+            <div class="food-card">
+                <h3>Garlic Bread</h3>
+                <p class="price">₹129</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sweets -->
+
+    <div class="category">
+        <div class="category-title">🍨 Special Sweets</div>
+
+        <div class="food-row">
+            <div class="food-card">
+                <h3>Gulab Jamun</h3>
+                <p class="price">₹80</p>
+            </div>
+
+            <div class="food-card">
+                <h3>Rasgulla</h3>
+                <p class="price">₹90</p>
+            </div>
+
+            <div class="food-card">
+                <h3>Kaju Katli</h3>
+                <p class="price">₹120</p>
+            </div>
+
+            <div class="food-card">
+                <h3>Rabdi</h3>
+                <p class="price">₹110</p>
+            </div>
+
+            <div class="food-card">
+                <h3>Kulfi</h3>
+                <p class="price">₹70</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Drinks -->
+
+    <div class="category">
+        <div class="category-title">🥤 Refreshing Drinks</div>
+
+        <div class="food-row">
+            <div class="food-card">
+                <h3>Mango Shake</h3>
+                <p class="price">₹120</p>
+            </div>
+
+            <div class="food-card">
+                <h3>Cold Coffee</h3>
+                <p class="price">₹130</p>
+            </div>
+
+            <div class="food-card">
+                <h3>Fresh Lime Soda</h3>
+                <p class="price">₹80</p>
+            </div>
+
+            <div class="food-card">
+                <h3>Chocolate Milkshake</h3>
+                <p class="price">₹140</p>
+            </div>
+
+            <div class="food-card">
+                <h3>Mocktail Special</h3>
+                <p class="price">₹180</p>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<footer>
+    <h3>🍽 Delicious Food Restaurant</h3>
+    <p>Serving Happiness Since 1995</p>
+</footer>
+
+</body>
+</html>

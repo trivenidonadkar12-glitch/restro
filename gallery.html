@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Food Gallery | Delicious Restaurant</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:#f8f8f8;
+}
+
+/* Header */
+
+header{
+    background:#111;
+    padding:15px 0;
+    position:sticky;
+    top:0;
+    z-index:1000;
+}
+
+nav a:hover,
+nav .active{
+    color:#ff9800;
+}
+
+/* Banner */
+
+.gallery-banner{
+    height:60vh;
+    background:
+    linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),
+    url('https://images.unsplash.com/photo-1517248135467-4c7edcad34c4');
+    background-size:cover;
+    background-position:center;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    color:white;
+}
+
+.gallery-banner h1{
+    font-size:65px;
+    font-family:'Playfair Display',serif;
+}
+
+.gallery-banner p{
+    font-size:20px;
+    margin-top:10px;
+}
+
+/* Sections */
+
+.gallery-section{
+    padding:60px 8%;
+}
+
+.gallery-section h2{
+    text-align:center;
+    font-size:38px;
+    color:#222;
+    margin-bottom:35px;
+}
+
+/* Grid */
+
+.gallery-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:25px;
+}
+
+/* Cards */
+
+.food-card{
+    background:white;
+    border-radius:15px;
+    overflow:hidden;
+    box-shadow:0 5px 15px rgba(0,0,0,0.15);
+    transition:0.4s;
+}
+
+.food-card:hover{
+    transform:translateY(-8px);
+    box-shadow:0 10px 25px rgba(0,0,0,0.25);
+}
+
+.food-card img{
+    width:100%;
+    height:250px;
+    object-fit:cover;
+}
+
+.food-card h3{
+    text-align:center;
+    padding:15px;
+    color:#333;
+    font-size:20px;
+}
+
+/* Responsive */
+
+@media(max-width:768px){
+
+.gallery-banner h1{
+    font-size:40px;
+}
+
+.gallery-banner p{
+    font-size:16px;
+}
+
+.gallery-grid{
+    grid-template-columns:1fr;
+}
+
+.food-card img{
+    height:220px;
+}
+
+}
+
+</style>
+</head>
+<body>
+
+<section class="gallery-banner">
+    <h1>Our Food Gallery</h1>
+    <p>Experience the taste through our delicious dishes.</p>
+</section>
+
+<!-- South Indian -->
+
+<section class="gallery-section">
+<h2>🥘 South Indian Delights</h2>
+
+<div class="gallery-grid">
+
+<div class="food-card">
+<img src="https://images.unsplash.com/photo-1589302168068-964664d93dc0" alt="">
+<h3>Veg biryani</h3>
+</div>
+
+<div class="food-card">
+<img src="https://images.unsplash.com/photo-1601050690597-df0568f70950" alt="">
+<h3>Samosa</h3>
+</div>
+
+<div class="food-card">
+<img src="https://images.unsplash.com/photo-1626074353765-517a681e40be" alt="">
+<h3>Tanduri Chicken</h3>
+</div>
+
+<div class="food-card">
+<img src="https://images.unsplash.com/photo-1630383249896-424e482df921" alt="">
+<h3>South Indian Thali</h3>
+</div>
+
+</div>
+</section>
+
+<!-- Gujarati -->
+
+<section class="gallery-section">
+<h2>🍛 Rajastani Specials</h2>
+
+<div class="gallery-grid">
+
+<div class="food-card">
+<img src="https://images.unsplash.com/photo-1631452180519-c014fe946bc7" alt="">
+<h3>Shahi Paneer</h3>
+</div>
+
+<div class="food-card">
+<img src="https://images.unsplash.com/photo-1606491956689-2ea866880c84" alt="">
+<h3>Pav Bhaji</h3>
+</div>
+
+<div class="food-card">
+<img src="https://images.unsplash.com/photo-1630409346824-4f0e7b080087" alt="">
+<h3>Veg pulav</h3>
+</div>
+
+<div class="food-card">
+<img src="https://images.unsplash.com/photo-1585937421612-70a008356fbe" alt="">
+<h3>Mix veg carry</h3>
+</div>
+
+</div>
+</section>
+
+<!-- Western -->
+
+<section class="gallery-section">
+<h2>🍕 Western Favorites</h2>
+
+<div class="gallery-grid">
+
+<div class="food-card">
+<img src="https://images.unsplash.com/photo-1513104890138-7c749659a591" alt="">
+<h3>Pizza</h3>
+</div>
+
+<div class="food-card">
+<img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd" alt="">
+<h3>Burger</h3>
+</div>
+
+<div class="food-card">
+<img src="https://images.unsplash.com/photo-1550317138-10000687a72b" alt="">
+<h3>Sandwich</h3>
+</div>
+
+<div class="food-card">
+<img src="https://images.unsplash.com/photo-1529193591184-b1d58069ecdd" alt="">
+<h3>BBQ ribs</h3>
+</div>
+
+</div>
+</section>
+
+<!-- Desserts -->
+
+<section class="gallery-section">
+<h2>🍰 Desserts & Sweets</h2>
+
+<div class="gallery-grid">
+
+<div class="food-card">
+<img src="https://images.unsplash.com/photo-1565958011703-44f9829ba187" alt="">
+<h3>Pastry</h3>
+</div>
+
+<div class="food-card">
+<img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587" alt="">
+<h3>Cake</h3>
+</div>
+
+<div class="food-card">
+<img src="https://images.unsplash.com/photo-1551024601-bec78aea704b" alt="">
+<h3>Donut</h3>
+</div>
+
+<div class="food-card">
+<img src="https://images.unsplash.com/photo-1488477181946-6428a0291777" alt="">
+<h3>Dessert</h3>
+</div>
+
+</div>
+</section>
+
+<!-- Drinks -->
+
+<section class="gallery-section">
+<h2>🥤 Refreshing Drinks</h2>
+
+<div class="gallery-grid">
+
+<div class="food-card">
+<img src="https://images.unsplash.com/photo-1544145945-f90425340c7e" alt="">
+<h3>Mocktail</h3>
+</div>
+
+<div class="food-card">
+<img src="https://images.unsplash.com/photo-1497534446932-c925b458314e" alt="">
+<h3>Fresh Juice</h3>
+</div>
+
+<div class="food-card">
+<img src="https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd" alt="">
+<h3>Lime juice</h3>
+</div>
+
+<div class="food-card">
+<img src="https://images.unsplash.com/photo-1461023058943-07fcbe16d735" alt="">
+<h3>Cold Coffee</h3>
+</div>
+
+</div>
+</section>
+
+</body>
+</html>
